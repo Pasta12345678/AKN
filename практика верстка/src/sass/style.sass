@@ -1,0 +1,588 @@
+$color-background: #202020
+$color-container__light: #00ABAB
+$color-container__dark: #008686
+$color-form: #0E686C
+$color-text: #ffffff
+
+$max-width: 1520px
+
+*, *::before, *::after
+    box-sizing: border-box
+
+input::placeholder
+    color: $color-text
+    font-size: 18px
+
+body
+    width: 100%
+    min-width: 320px
+    background: $color-background
+    font-family: Arial, Helvetica, sans-serif
+    color: $color-text
+
+img
+    max-width: 100%
+    height: auto
+
+.container
+    width: 100%
+    max-width: $max-width
+    margin: 0 auto
+    padding: 0 20px
+
+// ====================== ШАПКА ======================
+.header
+    width: 100%
+
+    .header__container
+        max-width: $max-width
+        min-height: 100px
+        padding: 10px 40px
+        display: flex
+        align-items: center
+        gap: 50px
+
+        .header__link-img
+            height: 70px
+            width: auto
+            border-radius: 10px
+            margin-right: auto
+
+        .header__link
+            font-size: 24px
+            color: $color-text
+            font-weight: 400
+            outline: none
+            text-decoration: none
+            white-space: nowrap
+
+        .header__link-main
+            font-size: 24px
+            color: $color-text
+            font-weight: 400
+            outline: none
+            white-space: nowrap
+
+// ====================== ГЛАВНАЯ ======================
+.main
+
+    .container__main
+        width: 100%
+
+        .main__title
+            .title__img
+                display: block
+                width: 100%
+                height: auto
+
+    .container__info
+        width: 100%
+
+        .main__info
+            background: $color-container__light
+            max-width: $max-width
+            padding: 50px
+            display: flex
+            align-items: center
+            justify-content: center
+            gap: 60px
+
+            .info__img
+                max-width: 100%
+                height: auto
+
+            .info__service
+                display: flex
+                flex-direction: column
+                align-items: center
+                color: $color-text
+
+                .service__title
+                    font-size: 32px
+                    font-weight: 500
+                    margin: 20px 0
+
+                .service__text
+                    font-size: 24px
+                    font-style: italic
+                    text-align: center
+                    max-width: 700px
+
+                .service__button
+                    background-color: $color-container__dark
+                    color: $color-text
+                    border-radius: 20px
+                    font-size: 30px
+                    margin-top: 30px
+                    padding: 10px 50px
+                    border: none
+                    cursor: pointer
+                    text-decoration: none
+
+    .container__form
+        width: 100%
+
+        .form
+            background: $color-container__dark
+            padding: 60px 20px
+
+            .container__form
+                background: $color-form
+                margin: 0 auto
+                width: 100%
+                max-width: 500px
+                border-radius: 80px
+                padding: 50px 40px
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 20px
+
+                .form__textarea-title
+                    color: $color-text
+                    font-size: 36px
+                    text-align: center
+
+                .form__textarea
+                    color: $color-text
+                    background-color: $color-container__dark
+                    border-radius: 20px
+                    font-size: 24px
+                    text-align: center
+                    padding: 10px 20px
+                    border: 1px solid $color-text
+                    width: 100%
+                    max-width: 360px
+
+                .form__textarea-button
+                    color: $color-text
+                    background-color: $color-container__dark
+                    border-radius: 20px
+                    font-size: 30px
+                    margin-top: 10px
+                    padding: 10px 50px
+                    border: none
+                    cursor: pointer
+
+// ====================== ПОДВАЛ ======================
+.footer
+    width: 100%
+
+    .footer__info
+        max-width: $max-width
+        margin: 0 auto
+        padding: 20px
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 50px
+
+        .footer__logo
+            height: 70px
+            width: auto
+
+        .footer__text
+            font-size: 20px
+            margin: 0
+
+    .footer__name
+        text-align: center
+        padding: 0 20px 20px
+
+// ====================== УСЛУГИ ======================
+.main__service
+    background: $color-container__dark
+    color: $color-text
+    padding: 50px 0
+
+    .main__container-service
+        max-width: $max-width
+        margin: 0 auto
+        padding: 0 60px
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-start
+        gap: 60px
+
+    .main__title
+        flex: 0 0 100%
+        text-align: center
+        font-size: 46px
+        margin-bottom: 20px
+
+    .card__container-1, .card__container-2
+        flex: 1 1 0
+        min-width: 0
+        display: flex
+        flex-direction: column
+        gap: 50px
+
+    .card__container-2
+        margin-top: 0
+
+    .main__card
+        .card__logo
+            height: 60px
+            width: auto
+            margin-bottom: 15px
+
+        .card__text
+            margin: 10px 0
+            text-decoration: underline
+            font-size: 17px
+
+        .card__title
+            font-size: 32px
+
+        .card__title-min
+            font-size: 24px
+            margin: 10px 0
+
+// ====================== О НАС ======================
+.container__info-block
+    background: $color-container__dark
+    color: $color-text
+    padding: 50px 0
+    margin-bottom: 50px
+
+    .info-block
+        max-width: $max-width
+        margin: 0 auto
+        padding: 0 60px
+
+        .info-block__info
+            display: flex
+            flex-direction: column
+            align-items: center
+            text-align: center
+
+            .info__title
+                font-size: 36px
+                margin-bottom: 15px
+
+            .info__text
+                margin: 10px 0
+                font-size: 20px
+                max-width: 1000px
+
+        .info-block__requisites
+            display: flex
+            align-items: center
+            justify-content: center
+            gap: 80px
+            margin-top: 50px
+
+            .requisites__img
+                max-width: 100%
+                height: auto
+
+            .requisites__main
+                display: flex
+                flex-direction: column
+
+                .requisites__title
+                    font-size: 32px
+                    margin-bottom: 15px
+
+                .requisites__text
+                    margin: 10px 0
+                    font-size: 18px
+
+// ====================== КОНТАКТЫ ======================
+.main__contact
+    background: $color-container__dark
+    color: $color-text
+    padding: 50px 0
+    margin-bottom: 50px
+
+    .container__contact
+        max-width: $max-width
+        margin: 0 auto
+        text-align: center
+
+        .contact__info
+            padding: 0 20px
+
+            .contact__title
+                font-size: 45px
+                margin-bottom: 15px
+
+            .contact__adress
+                font-size: 24px
+                margin-bottom: 15px
+
+            .contact__text
+                margin: 8px 0
+                font-size: 20px
+
+        .contact__form
+            margin-top: 50px
+
+            .container__form
+                background: $color-form
+                margin: 0 auto
+                width: 100%
+                max-width: 500px
+                border-radius: 80px
+                padding: 50px 40px
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 20px
+
+                .form__textarea-title
+                    color: $color-text
+                    font-size: 36px
+
+                .form__textarea
+                    color: $color-text
+                    background-color: $color-container__dark
+                    border-radius: 20px
+                    font-size: 24px
+                    text-align: center
+                    padding: 10px 20px
+                    border: 1px solid $color-text
+                    width: 100%
+                    max-width: 360px
+
+                .form__textarea-button
+                    color: $color-text
+                    background-color: $color-container__dark
+                    border-radius: 20px
+                    font-size: 30px
+                    margin-top: 10px
+                    padding: 10px 50px
+                    border: none
+                    cursor: pointer
+
+// ========================================================
+// ==================== ПЛАНШЕТ (<=768px) =================
+// ========================================================
+@media (max-width: 768px)
+    .header
+        .header__container
+            padding: 10px 20px
+            gap: 20px
+
+            .header__link-img
+                height: 50px
+
+            .header__link-main, .header__link
+                font-size: 18px
+
+    .main
+        .container__info
+            .main__info
+                flex-direction: column
+                padding: 30px 20px
+                gap: 30px
+
+                .info__service
+                    .service__title
+                        font-size: 28px
+
+                    .service__text
+                        font-size: 18px
+
+                    .service__button
+                        font-size: 26px
+
+        .container__form
+            .form
+                padding: 40px 20px
+
+                .container__form
+                    border-radius: 50px
+                    padding: 40px 25px
+
+                    .form__textarea-title
+                        font-size: 30px
+
+                    .form__textarea
+                        font-size: 20px
+                        max-width: 100%
+
+    .footer
+        .footer__info
+            gap: 30px
+
+            .footer__logo
+                height: 50px
+
+            .footer__text
+                font-size: 16px
+
+    .main__service
+        .main__container-service
+            padding: 0 25px
+            gap: 40px
+
+        .main__title
+            font-size: 34px
+            margin-bottom: 15px
+
+        .card__container-1, .card__container-2
+            flex: 0 0 100%
+            gap: 40px
+
+        .main__card
+            .card__title
+                font-size: 28px
+
+            .card__title-min
+                font-size: 20px
+
+            .card__text
+                font-size: 15px
+
+    .container__info-block
+        .info-block
+            padding: 0 25px
+
+            .info-block__info
+                .info__title
+                    font-size: 30px
+
+                .info__text
+                    font-size: 18px
+
+            .info-block__requisites
+                flex-direction: column
+                gap: 40px
+                text-align: center
+
+                .requisites__main
+                    align-items: center
+
+    .main__contact
+        .container__contact
+            .contact__info
+                .contact__title
+                    font-size: 36px
+
+                .contact__adress
+                    font-size: 18px
+
+            .contact__form
+                .container__form
+                    border-radius: 50px
+                    padding: 40px 25px
+
+                    .form__textarea-title
+                        font-size: 30px
+
+                    .form__textarea
+                        font-size: 20px
+                        max-width: 100%
+
+// ========================================================
+// ==================== ТЕЛЕФОН (<=480px) =================
+// ========================================================
+@media (max-width: 480px)
+    .header
+        .header__container
+            padding: 10px 15px
+            gap: 12px
+
+            .header__link-img
+                height: 40px
+
+            .header__link-main, .header__link
+                font-size: 14px
+
+    .main
+        .container__info
+            .main__info
+                padding: 25px 15px
+
+                .info__service
+                    .service__title
+                        font-size: 24px
+
+                    .service__text
+                        font-size: 16px
+
+                    .service__button
+                        font-size: 22px
+                        padding: 10px 35px
+
+        .container__form
+            .form
+                padding: 30px 15px
+
+                .container__form
+                    border-radius: 40px
+                    padding: 30px 18px
+
+                    .form__textarea-title
+                        font-size: 26px
+
+                    .form__textarea
+                        font-size: 18px
+
+                    .form__textarea-button
+                        font-size: 26px
+                        padding: 10px 35px
+
+    .footer
+        .footer__info
+            flex-direction: column
+            gap: 15px
+
+            .footer__logo
+                height: 45px
+
+    .main__service
+        .main__container-service
+            padding: 0 15px
+
+        .main__title
+            font-size: 28px
+
+        .main__card
+            .card__title
+                font-size: 24px
+
+            .card__title-min
+                font-size: 18px
+
+            .card__text
+                font-size: 14px
+
+    .container__info-block
+        .info-block
+            padding: 0 15px
+
+            .info-block__info
+                .info__title
+                    font-size: 26px
+
+                .info__text
+                    font-size: 16px
+
+    .main__contact
+        .container__contact
+            .contact__info
+                .contact__title
+                    font-size: 30px
+
+                .contact__adress
+                    font-size: 16px
+
+                .contact__text
+                    font-size: 16px
+
+            .contact__form
+                .container__form
+                    border-radius: 40px
+                    padding: 30px 18px
+
+                    .form__textarea-title
+                        font-size: 26px
+
+                    .form__textarea
+                        font-size: 18px
+
+                    .form__textarea-button
+                        font-size: 26px
+                        padding: 10px 35px
